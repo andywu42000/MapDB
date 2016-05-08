@@ -27,4 +27,4 @@ def mark_download(request):
     #result.append({"marks": marks})
     resp = json.dumps(marks, sort_keys=True)
     print resp
-    return JsonResponse(resp, safe=False)
+    return JsonResponse(resp, safe=False, charset='utf-8')
